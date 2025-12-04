@@ -1,0 +1,116 @@
+/* TravelIT Global Style Guide - Base CSS Variables */
+/* Dark Theme with #384453 background */
+
+:root {
+  /* --- COLORS --- */
+  /* TravelIT Global Brand Colors */
+  --color-primary: #43c118;
+  /* Green */
+  --color-secondary: #00adef;
+  /* Blue */
+  --color-accent: #fd8200;
+  /* Orange */
+
+  /* Multi-color gradient using all three brand colors */
+  --color-primary-gradient: linear-gradient(to right, #43c118, #00adef, #fd8200);
+
+  /* Alternative two-color gradients */
+  --color-gradient-green-blue: linear-gradient(to right, #43c118, #00adef);
+  --color-gradient-blue-orange: linear-gradient(to right, #00adef, #fd8200);
+  --color-gradient-green-orange: linear-gradient(to right, #43c118, #fd8200);
+
+  /* Dark Theme Colors - Based on #384453 */
+  --color-bg-main: #384453;
+  /* Main dark background */
+  --color-bg-secondary: #2d3642;
+  /* Darker shade for contrast */
+  --color-bg-light: #4a5568;
+  /* Lighter shade for cards/elevated surfaces */
+  --color-border-light: #4a5568;
+  /* Lighter border for dark theme */
+  --color-border-dark: #2d3642;
+  /* Darker border */
+
+  /* Text Colors - Adjusted for dark background */
+  --color-text-heading: #ffffff;
+  /* White for headings on dark bg */
+  --color-text-body: #e2e8f0;
+  /* Light gray for body text */
+  --color-text-muted: #a0aec0;
+  /* Muted text for less important content */
+  --color-text-light: #ffffff;
+  /* Pure white for emphasis */
+
+  /* --- TYPOGRAPHY --- */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* --- UI STYLING --- */
+  --border-radius-button: 30px;
+  --border-radius-card: 12px;
+  --box-shadow-soft: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  --box-shadow-card: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  --section-spacing: 4rem;
+
+  /* --- TRANSITIONS --- */
+  --transition-base: all 0.3s ease;
+}
+
+/* Basic Resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--color-text-body);
+  background-color: var(--color-bg-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
