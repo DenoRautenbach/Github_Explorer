@@ -243,9 +243,9 @@ const loadMore = () => {
 }
 
 .repo-item.active { 
-  background: var(--color-primary-gradient); 
-  color: var(--color-text-light); 
-  border-left: 4px solid var(--color-accent);
+  background: var(--color-bg-light); 
+  color: var(--color-text-heading); 
+  border-left: 4px solid var(--color-secondary);
 }
 
 .repo-name {
@@ -300,7 +300,7 @@ const loadMore = () => {
 
 .favorites-section { 
   padding: 1rem 1.5rem; 
-  background: rgba(253, 130, 0, 0.1); 
+  background: rgba(219, 97, 162, 0.08); 
   border-bottom: 1px solid var(--color-border-dark); 
   max-height: 150px; 
   overflow-y: auto;
@@ -489,7 +489,7 @@ const loadMore = () => {
 .fav-btn.active { 
   color: var(--color-accent); 
   border-color: var(--color-accent); 
-  background: rgba(253, 130, 0, 0.1); 
+  background: rgba(219, 97, 162, 0.1); 
 }
 
 .modal-overlay { 

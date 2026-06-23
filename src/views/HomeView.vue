@@ -133,7 +133,7 @@ onMounted(() => {
   justify-content: center;
   min-height: 100vh;
   padding: 2rem;
-  background-image: url('home.jpg');
+  background-image: url('/home.gif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,7 +147,7 @@ onMounted(() => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(56, 68, 83, 0.85);
+  background: rgba(13, 17, 23, 0.75);
   z-index: 1;
 }
 
@@ -157,6 +157,25 @@ onMounted(() => {
   text-align: center;
   position: relative;
   z-index: 2;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.github-logo {
+  width: 96px;
+  height: 96px;
+  filter: drop-shadow(0 0 15px rgba(47, 129, 247, 0.4));
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
 }
 
 .home-title {
@@ -201,7 +220,7 @@ onMounted(() => {
 .search-container:focus-within {
   transform: translateY(-2px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-  border-color: var(--color-primary);
+  border-color: var(--color-secondary);
 }
 
 .search-input {
@@ -222,7 +241,7 @@ onMounted(() => {
 }
 
 .search-input:focus {
-  box-shadow: 0 0 0 2px rgba(67, 193, 24, 0.3);
+  box-shadow: 0 0 0 2px rgba(47, 129, 247, 0.3);
   background: var(--color-bg-main);
 }
 

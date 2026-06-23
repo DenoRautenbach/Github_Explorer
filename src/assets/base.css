@@ -1,59 +1,59 @@
-/* TravelIT Global Style Guide - Base CSS Variables */
-/* Dark Theme with #384453 background */
+/* GitHub-Themed Global Style Guide - Base CSS Variables */
+/* Dark Theme inspired by GitHub's dark-dimmed and dark-default designs */
 
 :root {
   /* --- COLORS --- */
-  /* TravelIT Global Brand Colors */
-  --color-primary: #43c118;
-  /* Green */
-  --color-secondary: #00adef;
-  /* Blue */
-  --color-accent: #fd8200;
-  /* Orange */
+  /* GitHub Global Brand Colors */
+  --color-primary: #2ea44f;
+  /* GitHub Green */
+  --color-secondary: #2f81f7;
+  /* GitHub Blue */
+  --color-accent: #db61a2;
+  /* GitHub Purple/Accent */
 
-  /* Multi-color gradient using all three brand colors */
-  --color-primary-gradient: linear-gradient(to right, #43c118, #00adef, #fd8200);
+  /* Multi-color gradient using GitHub brand colors */
+  --color-primary-gradient: linear-gradient(135deg, #2f81f7, #2ea44f);
 
-  /* Alternative two-color gradients */
-  --color-gradient-green-blue: linear-gradient(to right, #43c118, #00adef);
-  --color-gradient-blue-orange: linear-gradient(to right, #00adef, #fd8200);
-  --color-gradient-green-orange: linear-gradient(to right, #43c118, #fd8200);
+  /* Alternative gradients */
+  --color-gradient-green-blue: linear-gradient(135deg, #2ea44f, #2f81f7);
+  --color-gradient-blue-orange: linear-gradient(135deg, #2f81f7, #f78166);
+  --color-gradient-green-orange: linear-gradient(135deg, #2ea44f, #f78166);
 
-  /* Dark Theme Colors - Based on #384453 */
-  --color-bg-main: #384453;
-  /* Main dark background */
-  --color-bg-secondary: #2d3642;
-  /* Darker shade for contrast */
-  --color-bg-light: #4a5568;
-  /* Lighter shade for cards/elevated surfaces */
-  --color-border-light: #4a5568;
-  /* Lighter border for dark theme */
-  --color-border-dark: #2d3642;
+  /* GitHub Dark Theme Colors */
+  --color-bg-main: #0d1117;
+  /* Main background */
+  --color-bg-secondary: #161b22;
+  /* Card/Sidebar background */
+  --color-bg-light: #21262d;
+  /* Elevated surface/input background */
+  --color-border-light: #30363d;
+  /* Light border */
+  --color-border-dark: #21262d;
   /* Darker border */
 
-  /* Text Colors - Adjusted for dark background */
-  --color-text-heading: #ffffff;
-  /* White for headings on dark bg */
-  --color-text-body: #e2e8f0;
+  /* Text Colors */
+  --color-text-heading: #f0f6fc;
+  /* Off-white for headings */
+  --color-text-body: #c9d1d9;
   /* Light gray for body text */
-  --color-text-muted: #a0aec0;
-  /* Muted text for less important content */
+  --color-text-muted: #8b949e;
+  /* Muted text */
   --color-text-light: #ffffff;
-  /* Pure white for emphasis */
+  /* Pure white */
 
   /* --- TYPOGRAPHY --- */
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
   /* --- UI STYLING --- */
-  --border-radius-button: 30px;
-  --border-radius-card: 12px;
-  --box-shadow-soft: 0px 10px 30px rgba(0, 0, 0, 0.3);
-  --box-shadow-card: 0px 4px 20px rgba(0, 0, 0, 0.4);
-  --section-spacing: 4rem;
+  --border-radius-button: 6px;
+  --border-radius-card: 6px;
+  --box-shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --box-shadow-card: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --section-spacing: 3rem;
 
   /* --- TRANSITIONS --- */
-  --transition-base: all 0.3s ease;
+  --transition-base: all 0.2s cubic-bezier(0.3, 0, 0.6, 1);
 }
 
 /* Basic Resets */

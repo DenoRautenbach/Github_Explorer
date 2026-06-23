@@ -136,7 +136,7 @@ h2 {
   background: var(--color-border-light);
 }
 
-.additions .stat-value { color: #43c118; }
+.additions .stat-value { color: #2ea44f; }
 .deletions .stat-value { color: #ff6b6b; }
 
 .files-container {
@@ -189,10 +189,10 @@ h2 {
   text-transform: uppercase;
 }
 
-.status-badge.added { background: rgba(67, 193, 24, 0.2); color: #43c118; }
-.status-badge.modified { background: rgba(253, 130, 0, 0.2); color: #fd8200; }
-.status-badge.removed { background: rgba(255, 107, 107, 0.2); color: #ff6b6b; }
-.status-badge.renamed { background: rgba(0, 173, 239, 0.2); color: #00adef; }
+.status-badge.added { background: rgba(46, 164, 79, 0.15); color: #2ea44f; }
+.status-badge.modified { background: rgba(210, 153, 34, 0.15); color: #d29922; }
+.status-badge.removed { background: rgba(248, 81, 73, 0.15); color: #ff6b6b; }
+.status-badge.renamed { background: rgba(47, 129, 247, 0.15); color: #2f81f7; }
 
 .file-stats {
   display: flex;
@@ -201,6 +201,6 @@ h2 {
   font-weight: 600;
 }
 
-.add { color: #43c118; }
+.add { color: #2ea44f; }
 .del { color: #ff6b6b; }
 </style>

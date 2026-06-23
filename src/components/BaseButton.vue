@@ -23,86 +23,60 @@ defineEmits<{
 
 <style scoped>
 .base-button {
-  /* Base button styling using TravelIT Global variables */
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.875rem 2rem;
+  /* Base button styling using GitHub variables */
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
   border-radius: var(--border-radius-button);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   cursor: pointer;
   transition: var(--transition-base);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.375rem;
   white-space: nowrap;
   position: relative;
-  overflow: hidden;
+  line-height: 1.25rem;
 }
 
 .base-button:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
-/* Primary Button - Orange Gradient */
+/* Primary Button - GitHub Green */
 .base-button--primary {
-  background: var(--color-primary-gradient);
-  color: var(--color-text-light);
-  border-color: transparent;
-  box-shadow: 0 4px 15px rgba(240, 90, 40, 0.3);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  box-shadow: 0 1px 0 rgba(27, 31, 35, 0.1);
 }
 
 .base-button--primary:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(240, 90, 40, 0.4);
-  filter: brightness(1.05);
+  background-color: #2c974b;
 }
 
 .base-button--primary:active:not(:disabled) {
-  transform: translateY(0);
-  box-shadow: 0 2px 10px rgba(240, 90, 40, 0.3);
+  background-color: #298e46;
 }
 
-/* Secondary Button - Outlined */
+/* Secondary Button - GitHub Dark Gray */
 .base-button--secondary {
-  background: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-primary);
-  box-shadow: none;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-body);
+  border: 1px solid var(--color-border-light);
+  box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04);
 }
 
 .base-button--secondary:hover:not(:disabled) {
-  background: var(--color-primary-gradient);
-  color: var(--color-text-light);
-  border-color: transparent;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(240, 90, 40, 0.2);
+  background-color: #30363d;
+  border-color: #8b949e;
+  color: var(--color-text-heading);
 }
 
 .base-button--secondary:active:not(:disabled) {
-  transform: translateY(0);
-}
-
-/* Ripple effect on click */
-.base-button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s;
-}
-
-.base-button:active::before {
-  width: 300px;
-  height: 300px;
+  background-color: #282e38;
 }
 </style>
